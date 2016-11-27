@@ -1,0 +1,36 @@
+{
+  "name": "nodepj",
+  "version": "1.0.0",
+  "description": "new ppj",
+  "main": "index.js",
+  "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.15.2",
+    "connect-flash": "^0.1.1",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.14.2",
+    "express-validator": "^3.0.0",
+    "mongodb": "^2.2.11",
+    "mongoose": "^4.7.0",
+    "node": "^0.0.0",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/999mani/nodepj.git"
+  },
+  "author": "Mani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/999mani/nodepj/issues"
+  },
+  "homepage": "https://github.com/999mani/nodepj#readme"
+}
