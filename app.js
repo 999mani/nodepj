@@ -33,7 +33,7 @@ app.set('view engine','handlebars');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
-app.use(cookieParser); 
+app.use(cookieParser()); 
 
 // static folder to store imgs,css,styles,js....etc
 
@@ -78,7 +78,7 @@ app.use(expressValidator(
 ));
 
 
-// connect flash form msgs
+// connect flash form msgs global variavles
 
 
 app.use(flash());
@@ -90,6 +90,7 @@ app.use(function(req,res,next)
 res.locals.success_msg = req.flash('sucess_msg');
 res.locals.error_msg = req.flash('error_msg');
 res.locals.error = req.flash('error');
+res.locals.user = req.user || null;
 next();
 });
 
