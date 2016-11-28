@@ -27,12 +27,12 @@ router.post('/register',function(req,res)
     var password = req.body.password;
     var password2 = req.body.password2;
 
-req.checkBody('name','Name is required').notEmpty();
-req.checkBody('email','Email is required').notEmpty();
-req.checkBody('email','Email is required').isEmail();
-req.checkBody('username','Username is required').notEmpty();
-req.checkBody('password','password is required').notEmpty();
-req.checkBody('password2','passwords do not match').equals(req.body.password);
+req.checkBody('name','Name is required !! ').notEmpty();
+req.checkBody('email','Email is required !! ').notEmpty();
+req.checkBody('email','Invalid Email id !! ').isEmail();
+req.checkBody('username','Username is required !! ').notEmpty();
+req.checkBody('password','Password is required!! ').notEmpty();
+req.checkBody('password2','Passwords do not match!! ').equals(req.body.password);
 
 
 var errors = req.validationErrors();
@@ -58,7 +58,7 @@ else
         console.log(user);
     });
 
-    req.flash('success_msg','You are registers and can now login');
+    req.flash('success_msg','Successfully Registered');
     res.redirect('/users/login');
 }
 
@@ -73,7 +73,7 @@ passport.use(new LocalStrategy(
           if(err) throw err;
           if(!user)
           {
-              return done(null,false,{message:'unknown User'});
+              return done(null,false,{message:'Unknown User'});
           }
 
           User.comparePassword(password,user.password,function(err,isMatch)
@@ -84,7 +84,7 @@ passport.use(new LocalStrategy(
               return done(null,user);
               }
               else{
-                  return done(null,false,{message:'Invalid password'});
+                  return done(null,false,{message:'Invalid Password'});
 
               }
           });
@@ -111,7 +111,7 @@ router.post('/login',
 router.get('/logout',function(req,res)
 {
     req.logout();
-    req.flash('success_msg','you are logged out');
+    // req.flash('success_msg','you are logged out');
     res.redirect('/users/login');
 });
 

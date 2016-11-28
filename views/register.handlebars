@@ -1,9 +1,11 @@
-<h2 class="page-header">Registration</h2>
- {{#if errors}}
-    {{#each errors }}
-        <div class="alert alert-danger">{{msg}}</div>
-    {{/each }}
- {{/if}}
+
+{{#if errors}}
+        <div class="alert alert-danger">
+                 {{#each errors }}
+                         {{msg}}
+                  {{/each }}
+            </div>
+      {{/if}}
 <form method="post" action="/users/register">
 <div class="form-group">
     <label>Name</label>
