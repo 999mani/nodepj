@@ -123,48 +123,28 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 
 
-
-.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
-    background-color: #31708f;
+.header {
+    padding-bottom: 20px;
+    border-bottom: 0px;
 }
 
-.navbar-inverse .navbar-toggle .icon-bar {
-    background-color: #337ab7;
+.showmyerr
+{
+    color:darkred;
 }
 
-.navbar-inverse .navbar-toggle {
-    border-color: #5bc0de;
+.footer
+{
+  position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
 }
 
-.navbar-toggle:focus {
-    outline: 0px;
-}
+.padset{
 
-.navbar-toggle {
-    position: relative;
-    float: right;
-    margin-top: 8px;
-    margin-right: 15px;
-    margin-bottom: 8px;
-    background-color: transparent;
-    background-image: none;
-    padding: 9px 10px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: transparent;
-    border-image: initial;
-    border-radius: 4px;
+  padding-top: 50px;
 }
-
-.navbar-inverse .navbar-toggle {
-    border-color: #337ab7;
-}
-
-.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
-    background-color: #337ab7;
-}
-
-.navbar-inverse .navbar-toggle .icon-bar {
-    background-color: #337ab7;
-}
-

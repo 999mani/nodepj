@@ -103,32 +103,45 @@
         <h3 class="text-muted">LOGO</h3>
       </div>
 
-     
-      <div class="row ">
+     <div class="padset">
+      <div class="row">
         <div class="col-lg-6 panel panel-default">
-          {{{body}}}
-        </div>
-        <div class="col-lg-6">
-          {{#if success_msg}}
+            {{#if success_msg}}
               <div class="alert alert-success">
                 {{success_msg}}
               </div>
             {{/if}}
 
               {{#if error_msg}}
-              <div class="alert alert-danger">
-                {{error_msg}}
+              <div class="showmyerr">
+                * {{error}}
+                <p></br></p>
               </div>
               {{/if}}
 
               {{#if error}}
-              <div class="alert alert-danger">
-                {{error}}
+              <div class="showmyerr">
+                * {{error}}
+                <p></br></p>
               </div>
               {{/if}}
+              
+          {{{body}}}
+          
+        </div>
+
+        
+
+        <div class="col-lg-6">
+            
+            
+              
+                  <img width="60%" height="60%" style="display:block ; margin-left:auto;margin-right:auto;margin-top:auto;margin-bottom:auto" src="/img/animat-day-night-color.gif"></img>
+                  
+            
         </div>
       </div>
-       
+       </div>
 
       <footer class="footer">
         <p>&copy; 2016 My first Login app .</p>

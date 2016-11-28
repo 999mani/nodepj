@@ -220,3 +220,13 @@ body {
 .btn{
     border-radius: 0;
 }
+
+.showmyerr
+{
+    color:darkred;
+}
+
+.header {
+    padding-bottom: 20px;
+    border-bottom: 0px;
+}
